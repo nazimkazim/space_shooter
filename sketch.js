@@ -95,7 +95,7 @@ function draw() {
     for (var j = 0; j < flowers.length; j++) {
       if (drops[i].hits(flowers[j])) {
         numsOfHits +=1;
-        bulletHitsBody = loadSound('http://res.cloudinary.com/nzmai/video/upload/v1507730937/heavybulletping_xnalpt.mp3', loadedHit);
+        bulletHitsBody = loadSound('https://res.cloudinary.com/nzmai/video/upload/v1507730937/heavybulletping_xnalpt.mp3', loadedHit);
         
         flowers[j].hitted();
         textFont(font,[18]);
