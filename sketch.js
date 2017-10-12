@@ -104,7 +104,7 @@ function draw() {
         flowers[j].dragging();
         lifeIndicator[j].decreaseLife();
         if (flowers[j].hits <= 0){
-          explosionSound = loadSound('http://res.cloudinary.com/nzmai/video/upload/v1507733418/explosion_zlbqxg.wav', loadedExplosion);
+          explosionSound = loadSound('https://res.cloudinary.com/nzmai/video/upload/v1507733418/explosion_zlbqxg.wav', loadedExplosion);
           flowers.splice(j, 1);
           lifeIndicator.splice(j, 1); 
         } 
@@ -177,7 +177,7 @@ function keyPressed() {
       bullets -= 0;
   } else if (key === ' ')  {
     bullets -= 1;
-    destroySound = loadSound("http://res.cloudinary.com/nzmai/video/upload/v1507730506/laser_shoot_ianbwv.wav", loadedShoot);
+    destroySound = loadSound("https://res.cloudinary.com/nzmai/video/upload/v1507730506/laser_shoot_ianbwv.wav", loadedShoot);
     runOutOfBullets();
     var drop = new Drop(ship.x, ship.y - 20);
     drops.push(drop);
@@ -185,9 +185,9 @@ function keyPressed() {
 
   if (keyCode === RIGHT_ARROW) {
     ship.setDir(1);
-    servoSound = loadSound('http://res.cloudinary.com/nzmai/video/upload/v1507734289/servoSound_d1oenp.wav', loadedServoSound);
+    servoSound = loadSound('https://res.cloudinary.com/nzmai/video/upload/v1507734289/servoSound_d1oenp.wav', loadedServoSound);
   } else if (keyCode === LEFT_ARROW) {
     ship.setDir(-1);
-    servoSound = loadSound('http://res.cloudinary.com/nzmai/video/upload/v1507734289/servoSound_d1oenp.wav', loadedServoSound);
+    servoSound = loadSound('https://res.cloudinary.com/nzmai/video/upload/v1507734289/servoSound_d1oenp.wav', loadedServoSound);
   }
 }
